@@ -1,0 +1,12 @@
+let
+    Kilde = () => let
+        Kilde = Folder.Contents("C:\Users"),
+        #"Endret type" = Table.TransformColumnTypes(Kilde,{{"Date modified", type date}}),
+        #"Filtrerte rader" = Table.SelectRows(#"Endret type", let latest = List.Max(#"Endret type"[Date modified]) in each [Date modified] = latest),
+        res = #"Filtrerte rader"{[Name="iryku"]}[Name]
+        
+   in
+        res
+in
+   Kilde
+
