@@ -1,0 +1,29 @@
+{
+  "version": "3.0.5",
+  "author": {
+    "name": "MAQ Software",
+    "email": "support@maqsoftware.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8",
+    "name": "ClusteringUsingOPTICSByMAQSoftware",
+    "displayName": "Clustering using OPTICS by MAQ Software",
+    "version": "3.0.5",
+    "description": "OPTICS based clustering algorithm to analyze groups and hierarchies within a group.​",
+    "supportUrl": "https://github.com/maqsoftware/PowerBI-visuals/issues",
+    "gitHubUrl": "https://github.com/maqsoftware/PowerBI-visuals/",
+    "visualClassName": "ClusteringUsingOPTICS"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
