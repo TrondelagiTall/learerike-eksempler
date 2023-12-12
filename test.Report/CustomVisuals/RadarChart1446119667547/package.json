@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/RadarChart1446119667547.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "RadarChart1446119667547"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
