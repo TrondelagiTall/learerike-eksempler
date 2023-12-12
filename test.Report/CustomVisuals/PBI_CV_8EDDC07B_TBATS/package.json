@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/PBI_CV_8EDDC07B_TBATS.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "PBI_CV_8EDDC07B_TBATS"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
