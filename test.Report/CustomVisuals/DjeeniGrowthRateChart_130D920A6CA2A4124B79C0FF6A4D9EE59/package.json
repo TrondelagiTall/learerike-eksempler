@@ -1,0 +1,29 @@
+{
+  "version": "1.0.2",
+  "author": {
+    "name": "Djeeni BV",
+    "email": "dev@djeeni.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/DjeeniGrowthRateChart_130D920A6CA2A4124B79C0FF6A4D9EE59.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "DjeeniGrowthRateChart_130D920A6CA2A4124B79C0FF6A4D9EE59",
+    "name": "GrowthRateChart",
+    "displayName": "Growth Rate Chart",
+    "version": "1.0.2",
+    "description": "Enhances the functionality of a combo chart by adding an extra relative comparison between selected bars in percent",
+    "supportUrl": "https://djeeni.com",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
