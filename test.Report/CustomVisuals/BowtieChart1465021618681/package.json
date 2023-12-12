@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/BowtieChart1465021618681.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "BowtieChart1465021618681"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
