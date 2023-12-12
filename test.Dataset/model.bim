@@ -1,0 +1,1122 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.120.963.0 (23.08)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Kommune navn\",\"Regioner\",\"Sentralitet\",\"Komm08-19_20 med nummere\",\"Spørring fra SSB - tom\",\"username\",\"07459\",\"Geografisk posisjon\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "nb-NO",
+    "cultures": [
+      {
+        "name": "nb-NO",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "Spørring fra SSB - tom",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "expression": [
+          "let",
+          "     PostContents= \"",
+          "     ",
+          "     ",
+          "     \",",
+          "     Source = Csv.Document(Web.Contents(\"   \", [Content=Text.ToBinary(PostContents)]),[Encoding=1252])",
+          "in",
+          "    Source"
+        ],
+        "kind": "m",
+        "lineageTag": "a03f971e-d6cc-43ac-904d-e66d69d2c0fa"
+      },
+      {
+        "name": "username",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigasjon"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Function"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Kilde = () => let",
+          "        Kilde = Folder.Contents(\"C:\\Users\"),",
+          "        #\"Endret type\" = Table.TransformColumnTypes(Kilde,{{\"Date modified\", type date}}),",
+          "        #\"Filtrerte rader\" = Table.SelectRows(#\"Endret type\", let latest = List.Max(#\"Endret type\"[Date modified]) in each [Date modified] = latest),",
+          "        res = #\"Filtrerte rader\"{[Name=\"iryku\"]}[Name]",
+          "        ",
+          "   in",
+          "        res",
+          "in",
+          "   Kilde"
+        ],
+        "kind": "m",
+        "lineageTag": "78507615-f93e-4972-8bf1-9642391fc7cf",
+        "queryGroup": "username"
+      }
+    ],
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "username"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "222b2882-af44-40f7-8927-ceaed8ee0718",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Kommune",
+        "fromTable": "Regioner",
+        "toCardinality": "many",
+        "toColumn": "Kommune fullt navn",
+        "toTable": "Kommune navn"
+      },
+      {
+        "name": "c5a64698-d0bc-4343-b75c-db7479d77dac",
+        "fromColumn": "kode-2020",
+        "fromTable": "Kommune navn",
+        "toColumn": "knr",
+        "toTable": "Sentralitet"
+      },
+      {
+        "name": "b69f3863-f1f8-4603-914d-aa30486ce907",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "KomNum20",
+        "fromTable": "Komm08-19_20 med nummere",
+        "toCardinality": "many",
+        "toColumn": "kode-2020",
+        "toTable": "Kommune navn"
+      }
+    ],
+    "sourceQueryCulture": "nb-NO",
+    "tables": [
+      {
+        "name": "DateTableTemplate_3d468459-ded2-4c6f-9ec4-c746d8b4407e",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "3150bd3d-70dd-40c7-97a7-109c9dae9104",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "År",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "79551741-2e18-4da5-8a8d-156bddc346b0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "209aa214-59c2-4b87-b112-1e971fadb1bc",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Måned",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "030933fb-4ac8-46f8-b6f6-64f1628d2bb1",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "51ac466e-fd93-4899-bbb6-ad58864fe3ee",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Kvartal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Kv \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "9158c817-d3fd-44de-9de4-0ccdb76cf899",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "c2252058-51cb-4f8f-851d-f317bbae015c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Datohierarki",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "År",
+                "column": "År",
+                "lineageTag": "073a0315-2674-4bb2-a7b0-f7f977731167",
+                "ordinal": 0
+              },
+              {
+                "name": "Kvartal",
+                "column": "Kvartal",
+                "lineageTag": "7db99422-1b03-4a58-9c88-6e5e7f753aa4",
+                "ordinal": 1
+              },
+              {
+                "name": "Måned",
+                "column": "Måned",
+                "lineageTag": "f6f03f10-c1cf-481e-ba45-815d6aef9edc",
+                "ordinal": 2
+              },
+              {
+                "name": "Dag",
+                "column": "Dag",
+                "lineageTag": "26035811-e94f-4aff-b523-4147ad3c50f4",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2735ae46-eb99-4710-aad7-d26d037ab097"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "760e4434-c963-452f-b1db-7f2182ebadd1",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_3d468459-ded2-4c6f-9ec4-c746d8b4407e-03b006e0-143e-4fb0-b1c6-876964acc79a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kommune navn",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigasjon"
+          }
+        ],
+        "columns": [
+          {
+            "name": "kode-2020",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7bd36c65-e70f-463f-928f-932ba64c2b57",
+            "sourceColumn": "kode-2020",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kommune fullt navn",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "63649520-99d3-47f9-a5e7-072e29c1d972",
+            "sourceColumn": "Kommune fullt navn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kommune",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d52e7c9e-6ce1-4f17-ba13-5498ec3b6dfc",
+            "sortByColumn": "kode-2020",
+            "sourceColumn": "Kommune",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "6447e80c-d9c3-41ea-adcb-21217d786d34",
+        "partitions": [
+          {
+            "name": "Kommune navn-73aea179-cd80-443b-b875-71c8380e3ae1",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "  Kilde = Excel.Workbook(Web.Contents(\"https://github.com/TrondelagiTall/mal/raw/main/region%20inndeling.xlsx\"), null, true),",
+                "    GNkommuner_Sheet = Kilde{[Item=\"GNkommuner\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Forfremmede overskrifter\" = Table.PromoteHeaders(GNkommuner_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Endret type\" = Table.TransformColumnTypes(#\"Forfremmede overskrifter\",{{\"kode-2008\", Int64.Type}, {\"navn-2008\", type text}, {\"kode-2012\", Int64.Type}, {\"navn-2012\", type text}, {\"kode-2018\", Int64.Type}, {\"navn-2018\", type text}, {\"kode-2019\", Int64.Type}, {\"navn-2019\", type text}, {\"kode-2020\", Int64.Type}, {\"navn-2020\", type text}, {\"Column11\", type any}, {\"Column12\", type any}, {\"Column13\", type any}, {\"Column14\", type any}, {\"Column15\", type any}, {\"Column16\", type text}}),",
+                "    #\"Fjernede kolonner\" = Table.RemoveColumns(#\"Endret type\",{\"kode-2008\", \"navn-2008\", \"kode-2012\", \"navn-2012\", \"kode-2018\", \"navn-2018\", \"kode-2019\", \"navn-2019\", \"Column11\", \"Column12\", \"Column13\", \"Column14\", \"Column15\", \"Column16\"}),",
+                "    #\"Kolonner med nye navn\" = Table.RenameColumns(#\"Fjernede kolonner\",{{\"navn-2020\", \"Kommune\"}}),",
+                "    #\"Nederste rader fjernet\" = Table.RemoveLastN(#\"Kolonner med nye navn\",2),",
+                "    #\"Egendefinert lagt til\" = Table.AddColumn(#\"Nederste rader fjernet\", \"Kommune kortnavn\", each [Kommune]),",
+                "    #\"Erstattet verdi\" = Table.ReplaceValue(#\"Egendefinert lagt til\",\"Snåase - Snåsa\",\"Snåsa\",Replacer.ReplaceText,{\"Kommune kortnavn\"}),",
+                "    #\"Erstattet verdi1\" = Table.ReplaceValue(#\"Erstattet verdi\",\"Raarvihke - Røyrvik\",\"Røyrvik\",Replacer.ReplaceText,{\"Kommune kortnavn\"}),",
+                "    #\"Kolonner med nye navn1\" = Table.RenameColumns(#\"Erstattet verdi1\",{{\"Kommune\", \"Kommune fullt navn\"}, {\"Kommune kortnavn\", \"Kommune\"}})",
+                "in",
+                "    #\"Kolonner med nye navn1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Regioner",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigasjon"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f0caa2c7-3817-43f5-96e2-0cef1b38626c",
+            "sortByColumn": "Rang",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kommune",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "64f1c4fa-4783-4265-b090-878e828ff148",
+            "sourceColumn": "Kommune",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Rang",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "71e2796f-0046-4b4d-a3dd-e6b48d3ee62e",
+            "sourceColumn": "Rang",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "527c62a7-ad35-427a-b99a-3ad397d144e1",
+        "partitions": [
+          {
+            "name": "Regioner-303aad67-2a76-444d-b95c-46d87b0aff4f",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Kilde = Excel.Workbook(Web.Contents(\"https://github.com/TrondelagiTall/mal/raw/main/region%20inndeling.xlsx\"), null, true),",
+                "    Regioner_Sheet = Kilde{[Item=\"Regioner\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Endret type\" = Table.TransformColumnTypes(Regioner_Sheet,{{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", Int64.Type}}),",
+                "    #\"Kolonner med nye navn\" = Table.RenameColumns(#\"Endret type\",{{\"Column1\", \"Region\"}, {\"Column2\", \"Kommune\"}, {\"Column3\", \"Rang\"}}),",
+                "    #\"Filtrerte rader\" = Table.SelectRows(#\"Kolonner med nye navn\", each ([Region] <> \"Trondheim\"))",
+                "in",
+                "    #\"Filtrerte rader\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sentralitet",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigasjon"
+          }
+        ],
+        "columns": [
+          {
+            "name": "knr",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c02b3263-1d23-4589-848a-9f123f290881",
+            "sourceColumn": "knr",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kommune",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fe74c2e6-5649-4148-bc9e-007b508340eb",
+            "sourceColumn": "Kommune",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Indeks 2020",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d046e0d1-fc97-43ab-bb45-b01c446857ef",
+            "sourceColumn": "Indeks 2020",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sentralitetsklasse",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4c9ec218-b23c-4527-b34c-d6bc01402584",
+            "sourceColumn": "Sentralitetsklasse",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Intervall",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8289075c-6a3b-44f2-803b-94a16f88bbc8",
+            "sourceColumn": "Intervall",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e6eb3057-fd6f-469a-81bf-6e91069c0144",
+        "partitions": [
+          {
+            "name": "Sentralitet-5532a705-972a-4ce0-84b8-32b7920bc0eb",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "   Kilde = Excel.Workbook(Web.Contents(\"https://github.com/TrondelagiTall/mal/raw/main/Indeks_klasser_20200226.xlsx\"), null, true),",
+                "    Tabell1_Table = Kilde{[Item=\"Tabell1\",Kind=\"Table\"]}[Data],",
+                "    #\"Endret type\" = Table.TransformColumnTypes(Tabell1_Table,{{\"knr\", Int64.Type}, {\"Kommune\", type text}, {\"Indeks 2020\", Int64.Type}, {\"Klasse\", Int64.Type}, {\"Intervall\", type text}}),",
+                "    #\"Kolonner med nye navn\" = Table.RenameColumns(#\"Endret type\",{{\"Klasse\", \"Sentralitetsklasse\"}}),",
+                "    #\"Filtrerte rader\" = Table.SelectRows(#\"Kolonner med nye navn\", each ([knr] = 5001 or [knr] = 5006 or [knr] = 5007 or [knr] = 5014 or [knr] = 5020 or [knr] = 5021 or [knr] = 5022 or [knr] = 5025 or [knr] = 5026 or [knr] = 5027 or [knr] = 5028 or [knr] = 5029 or [knr] = 5031 or [knr] = 5032 or [knr] = 5033 or [knr] = 5034 or [knr] = 5035 or [knr] = 5036 or [knr] = 5037 or [knr] = 5038 or [knr] = 5041 or [knr] = 5042 or [knr] = 5043 or [knr] = 5044 or [knr] = 5045 or [knr] = 5046 or [knr] = 5047 or [knr] = 5049 or [knr] = 5052 or [knr] = 5053 or [knr] = 5054 or [knr] = 5055 or [knr] = 5056 or [knr] = 5057 or [knr] = 5058 or [knr] = 5059 or [knr] = 5060 or [knr] = 5061))",
+                "in",
+                "    #\"Filtrerte rader\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Komm08-19_20 med nummere",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigasjon"
+          }
+        ],
+        "columns": [
+          {
+            "name": "KomNum08_20",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5eb2ef96-390a-40f7-8a6d-9eadaefd72b0",
+            "sourceColumn": "KomNum08_20",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "KomNavn08_20",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "08ba0c2a-163a-493d-af61-535ffb222959",
+            "sourceColumn": "KomNavn08_20",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "KomNum20",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb4aacc6-bf1d-428c-adfb-ca8e0446321c",
+            "sourceColumn": "KomNum20",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "KomNavn20",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5c29d209-3bf0-484d-a9a9-fd9ac2f5e317",
+            "sourceColumn": "KomNavn20",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "6b4ac77a-bba7-42db-8fd7-8129269319b5",
+        "partitions": [
+          {
+            "name": "Komm08-19_20 med nummere-285b93a9-893c-46fe-8c84-b9b6ae6db4cb",
+            "mode": "import",
+            "queryGroup": "username",
+            "source": {
+              "expression": [
+                "let",
+                "    Kilde = Excel.Workbook(Web.Contents(\"https://github.com/TrondelagiTall/mal/raw/main/region%20inndeling.xlsx\"), null, true),",
+                "    #\"Komm08-19_20 med nummere_Sheet\" = Kilde{[Item=\"Komm08-19_20 med nummere\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Forfremmede overskrifter\" = Table.PromoteHeaders(#\"Komm08-19_20 med nummere_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Endret type\" = Table.TransformColumnTypes(#\"Forfremmede overskrifter\",{{\"KomNum08_20\", Int64.Type}, {\"KomNavn08_20\", type text}, {\"KomNum20\", Int64.Type}, {\"KomNavn20\", type text}})",
+                "in",
+                "    #\"Endret type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "07459",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "region.kode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a2ed891a-85a1-4797-995e-c83f508ebaed",
+            "sourceColumn": "region.kode",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Geografi",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3b8e8a2a-3b52-41a6-8082-a2e341edf4d4",
+            "sourceColumn": "Geografi",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "år",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "546ef9ce-09dd-440d-8173-59260de04178",
+            "sourceColumn": "år",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "statistikkvariabel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "96e47947-4435-4191-8999-5be47edce912",
+            "sourceColumn": "statistikkvariabel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Verdi",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ccee8a0f-ef58-414a-b687-5c0098281ed2",
+            "sourceColumn": "Verdi",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fylkenummer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9b2c5f70-9b65-4eab-84a5-689fe301f83b",
+            "sourceColumn": "fylkenummer",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fylke",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da6d20e1-e067-4e0e-84fe-9c83cb981095",
+            "sourceColumn": "fylke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POINT_X.-longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c015afa3-b6fa-4313-baac-bc2480148f5f",
+            "sourceColumn": "POINT_X.-longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POINT_Y.-.Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1e2dd713-e1ae-4cbe-a080-bd1783cb2b0c",
+            "sourceColumn": "POINT_Y.-.Latitude",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "10c010a7-8d33-4ed6-9b50-e4d24d488576",
+        "measures": [
+          {
+            "name": "label",
+            "expression": "SELECTEDVALUE('07459'[Geografi])& \"|\"& SUM('07459'[Verdi])",
+            "lineageTag": "3950e789-36f4-48b9-8e3b-7898c21b0fd3"
+          },
+          {
+            "name": "farge bl",
+            "expression": "BLANK()",
+            "formatString": "0",
+            "lineageTag": "cd9046c7-b8c4-4452-96d2-9c60c4a94f8b"
+          },
+          {
+            "name": "tul",
+            "expression": "SUM('07459'[Verdi])",
+            "formatString": "0",
+            "lineageTag": "dc2cd6d2-7c30-40c2-a3c0-51c200c7c398"
+          },
+          {
+            "name": "lab 2",
+            "expression": [
+              "",
+              "VAR mak=CALCULATE(MAX('07459'[Verdi]), '07459'[år]<>2023)",
+              "RETURN",
+              "IF(SUM('07459'[Verdi])=mak, SELECTEDVALUE('07459'[Geografi])& \"|\"& SUM('07459'[Verdi]), BLANK())"
+            ],
+            "lineageTag": "49b18577-078d-4877-be23-c0cf8cec5c0a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "07459",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "     PostContents= \"",
+                "     {",
+                "  \"\"query\"\": [",
+                "    {",
+                "      \"\"code\"\": \"\"Region\"\",",
+                "      \"\"selection\"\": {",
+                "        \"\"filter\"\": \"\"ite,\"\",",
+                "        \"\"values\"\": [",
+                "          \"\"5001\"\", \"\"0\"\", \"\"50\"\", \"\"5005\"\",",
+                "          \"\"5006\"\",",
+                "          \"\"5007\"\",",
+                "          \"\"5014\"\",",
+                "          \"\"5020\"\",",
+                "          \"\"5021\"\",",
+                "          \"\"5022\"\",",
+                "          \"\"5025\"\",",
+                "          \"\"5026\"\",",
+                "          \"\"5027\"\",",
+                "          \"\"5028\"\",",
+                "          \"\"5029\"\",",
+                "          \"\"5031\"\",",
+                "          \"\"5032\"\",",
+                "          \"\"5033\"\",",
+                "          \"\"5034\"\",",
+                "          \"\"5035\"\",",
+                "          \"\"5036\"\",",
+                "          \"\"5037\"\",",
+                "          \"\"5038\"\",",
+                "          \"\"5041\"\",",
+                "          \"\"5042\"\",",
+                "          \"\"5043\"\",",
+                "          \"\"5044\"\",",
+                "          \"\"5045\"\",",
+                "          \"\"5046\"\",",
+                "          \"\"5047\"\",",
+                "          \"\"5049\"\",",
+                "          \"\"5052\"\",",
+                "          \"\"5053\"\",",
+                "          \"\"5054\"\",",
+                "          \"\"5055\"\",",
+                "          \"\"5056\"\",",
+                "          \"\"5057\"\",",
+                "          \"\"5058\"\",",
+                "          \"\"5059\"\",",
+                "          \"\"5060\"\",",
+                "          \"\"5061\"\"",
+                "        ]",
+                "      }",
+                "    },",
+                "    {",
+                "      \"\"code\"\": \"\"Alder\"\",",
+                "      \"\"selection\"\": {",
+                "        \"\"filter\"\": \"\"vs:AlleAldre00B\"\",",
+                "        \"\"values\"\": []",
+                "      }",
+                "    },",
+                "    {",
+                "      \"\"code\"\": \"\"Tid\"\",",
+                "      \"\"selection\"\": {",
+                "        \"\"filter\"\": \"\"item\"\",",
+                "        \"\"values\"\": [",
+                "          \"\"2020\"\",",
+                "          \"\"2021\"\",",
+                "          \"\"2022\"\",",
+                "          \"\"2023\"\"",
+                "        ]",
+                "      }",
+                "    }",
+                "  ],",
+                "  \"\"response\"\": {",
+                "    \"\"format\"\": \"\"csv2\"\"",
+                "  }",
+                "}",
+                "     ",
+                "     \",",
+                "     Source = Csv.Document(Web.Contents(\"https://data.ssb.no/api/v0/no/table/07459/\", [Content=Text.ToBinary(PostContents)]),[Encoding=1252]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"region\", type text}, {\"år\", Int64.Type}, {\"statistikkvariabel\", type text}, {\"07459: Befolkning,\", Int64.Type}}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Changed Type\", \"region\", Splitter.SplitTextByEachDelimiter({\" \"}, QuoteStyle.Csv, false), {\"region.kode\", \"Geografi\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"region.kode\", Int64.Type}, {\"Geografi\", type text}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"07459: Befolkning,\", \"Verdi\"}}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Renamed Columns\", each ([region.kode] <> 0 and [region.kode] <> 50)),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Filtered Rows\", \"fylkenummer\", each 50),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Added Custom\",{\"fylkenummer\", \"region.kode\", \"Geografi\", \"år\", \"statistikkvariabel\", \"Verdi\"}),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Reordered Columns\",{{\"fylkenummer\", Int64.Type}}),",
+                "    #\"Added Custom1\" = Table.AddColumn(#\"Changed Type2\", \"fylke\", each \"Trøndelag\"),",
+                "    #\"Changed Type3\" = Table.TransformColumnTypes(#\"Added Custom1\",{{\"fylke\", type text}}),",
+                "    #\"Merged Queries\" = Table.NestedJoin(#\"Changed Type3\", {\"Geografi\"}, #\"Geografisk posisjon\", {\"kommunenavn\"}, \"Geografisk posisjon\", JoinKind.LeftOuter),",
+                "    #\"Expanded {0}\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Geografisk posisjon\", {\"POINT_X.-longitude\", \"POINT_Y.-.Latitude\"}, {\"POINT_X.-longitude\", \"POINT_Y.-.Latitude\"}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Expanded {0}\",0,null,Replacer.ReplaceValue,{\"Verdi\"})",
+                "in",
+                "    #\"Replaced Value\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Geografisk posisjon",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0e5aecf9-bbd0-4727-94fd-607a030b97c1",
+            "sourceColumn": "1",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "kommune_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9d1fb8b0-78f9-4103-bb39-f5b0adc11f88",
+            "sourceColumn": "kommune_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "kommunenavn",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7a63802a-3417-4fc4-9c7f-acf6f3a8ab7e",
+            "sourceColumn": "kommunenavn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fylke_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e2450e41-1197-4ddf-a475-b384b608d593",
+            "sourceColumn": "fylke_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fylkesnavn",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "475ce6a7-fd5a-4619-9294-4b2a81e778cf",
+            "sourceColumn": "fylkesnavn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POINT_X.-longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataCategory": "Longitude",
+            "dataType": "double",
+            "lineageTag": "948d180a-0374-4e45-83fd-8c653001e779",
+            "sourceColumn": "POINT_X.-longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POINT_Y.-.Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataCategory": "Latitude",
+            "dataType": "double",
+            "lineageTag": "5be71a23-33f5-45ab-b894-48ffa77e4d20",
+            "sourceColumn": "POINT_Y.-.Latitude",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "06d3a376-afde-45dd-85ba-ad8660d5e816",
+        "partitions": [
+          {
+            "name": "Geografisk posisjon",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\iryku\\Trøndelag fylkeskommune\\Seksjon Regional - Statistikk\\PowerBI\\Geografisk posisjon.csv\"),[Delimiter=\",\", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Changed Type\", \"Column1\", Splitter.SplitTextByDelimiter(\",\", QuoteStyle.Csv), {\"Column1.1\", \"Column1.2\", \"Column1.3\", \"Column1.4\", \"Column1.5\", \"Column1.6\", \"Column1.7\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"Column1.1\", Int64.Type}, {\"Column1.2\", type text}, {\"Column1.3\", type text}, {\"Column1.4\", type text}, {\"Column1.5\", type text}, {\"Column1.6\", type text}, {\"Column1.7\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type1\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"1\", Int64.Type}, {\"kommune_id\", Int64.Type}, {\"kommunenavn\", type text}, {\"fylke_id\", Int64.Type}, {\"fylkesnavn\", type text}, {\"POINT_X.-longitude\", type text}, {\"POINT_Y.-.Latitude\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type2\",\".\",\",\",Replacer.ReplaceText,{\"POINT_X.-longitude\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\".\",\",\",Replacer.ReplaceText,{\"POINT_Y.-.Latitude\"}),",
+                "    #\"Changed Type3\" = Table.TransformColumnTypes(#\"Replaced Value1\",{{\"POINT_X.-longitude\", type number}, {\"POINT_Y.-.Latitude\", type number}})",
+                "in",
+                "    #\"Changed Type3\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
