@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
