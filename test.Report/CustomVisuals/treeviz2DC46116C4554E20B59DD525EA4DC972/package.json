@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/treeviz2DC46116C4554E20B59DD525EA4DC972.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "treeviz2DC46116C4554E20B59DD525EA4DC972"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
