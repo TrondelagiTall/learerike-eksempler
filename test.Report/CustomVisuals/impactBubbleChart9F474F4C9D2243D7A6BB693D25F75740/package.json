@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
