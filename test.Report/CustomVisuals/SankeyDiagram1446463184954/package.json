@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/SankeyDiagram1446463184954.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "SankeyDiagram1446463184954"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
