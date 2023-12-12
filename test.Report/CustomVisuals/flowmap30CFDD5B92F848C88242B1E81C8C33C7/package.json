@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/flowmap30CFDD5B92F848C88242B1E81C8C33C7.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "flowmap30CFDD5B92F848C88242B1E81C8C33C7"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
