@@ -1,0 +1,506 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY20SU09\",\"version\":\"5.16\",\"type\":2},\"customTheme\":{\"name\":\"TrondelagITall5736853392852754.json\",\"version\":\"5.44\",\"type\":1}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"isPersistentUserStateDisabled\":false,\"hideVisualContainerHeader\":false,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true,\"optOutNewFilterPaneExperience\":false,\"defaultFilterActionIsDataFilter\":false,\"useCrossReportDrillthrough\":false,\"allowChangeFilterTypes\":true,\"allowInlineExploration\":false,\"disableFilterPaneSearch\":false,\"enableDeveloperMode\":false,\"useEnhancedTooltips\":true,\"useScaledTooltips\":false,\"useDefaultAggregateDisplayName\":false,\"queryLimitOption\":0,\"customMemoryLimit\":\"1048576\",\"customTimeoutLimit\":\"225\"},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "iconMapV34089C0EB522B416294AA926F71B4FDBB",
+    "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6D",
+    "WordCloud1447959067750"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AnimImageChart5E0D9DE3474D954378960E4FBF598986.pbiviz.json",
+            "path": "AnimImageChart5E0D9DE3474D954378960E4FBF598986.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "AnimImageChart5E0D9DE3474D954378960E4FBF598986",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY20SU09",
+            "path": "BaseThemes/CY20SU09.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "DjeeniGrowthRateChart_130D920A6CA2A4124B79C0FF6A4D9EE59.pbiviz.json",
+            "path": "DjeeniGrowthRateChart_130D920A6CA2A4124B79C0FF6A4D9EE59.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "DjeeniGrowthRateChart_130D920A6CA2A4124B79C0FF6A4D9EE59",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1.pbiviz.json",
+            "path": "PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/adaptiveCards1267F9A0298D434386A9E71CED194547.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-65356892-ccec-4731-9e0a-162b1bae97d4hshKOzciv6Lrw1uZ283Vr4lxMI-63Mcro1.json",
+            "type": 5
+          }
+        ],
+        "name": "adaptiveCards1267F9A0298D434386A9E71CED194547",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/BowtieChart1465021618681.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-638d4968-133c-4015-a42e-6494d4485d91Zhn2E2lHKuRx.M4VysMe3DgIkDBXI91imiIx0GI.json",
+            "type": 5
+          }
+        ],
+        "name": "BowtieChart1465021618681",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-1064e81a-ee21-4f10-aea2-7a7a8d823e6eViyv6LWpk-brJTRO0Vsag9tmwcPYnfH1c0skWMvfcX8=.json",
+            "type": 5
+          }
+        ],
+        "name": "BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/candlestick95A09604B9D14884B6622C3C64130FA5.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-9bd19220-d7f3-4763-9be6-1c3b1f817043gvp0JUcBjVRWnvFt2ArLYpaHV0h7pQoDjC.sGj.json",
+            "type": 5
+          }
+        ],
+        "name": "candlestick95A09604B9D14884B6622C3C64130FA5",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/ChordChart1444757060245.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-a6d77f28-ae1a-4fe0-94cb-1b76509aca61HwWzSnkgGh31GvJZcEcn7U-pA-moHKsa9.R.json",
+            "type": 5
+          }
+        ],
+        "name": "ChordChart1444757060245",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-f3293605-32e1-42aa-af7e-94f650952f32H0pZTK5Gg0mrH9leRQw5Q-0LPFrj-Ov3BI7QctAPZSs=.json",
+            "type": 5
+          }
+        ],
+        "name": "ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/D3JsTree2F7A67F154D04FA3A4CA3E01DE5AE54B.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-9a4552fc-31d5-41a2-99c1-957059dca391cZjbM3CxAcM7Jrb7Ikqclp4apl81Q2hjuTxULzvH-XU=.json",
+            "type": 5
+          }
+        ],
+        "name": "D3JsTree2F7A67F154D04FA3A4CA3E01DE5AE54B",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/flowmap30CFDD5B92F848C88242B1E81C8C33C7.pbiviz.json",
+            "path": "flowmap30CFDD5B92F848C88242B1E81C8C33C7.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "flowmap30CFDD5B92F848C88242B1E81C8C33C7",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-b1ab33c4-6fdf-49cd-b887-2a2e89a93768VuiizSxXwlWSNrYmMinWIAJdU0NazJ5Hmr8yeLejHJs=.json",
+            "type": 5
+          }
+        ],
+        "name": "impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/NetworkNavigator1550434005853.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-2a22b337-60ba-4d91-bfe7-ea4cd503c874GmNQqLyGnHq5zGomqKVmLkHUsH0eZ-lEaYUsBx0QK4o=.json",
+            "type": 5
+          }
+        ],
+        "name": "NetworkNavigator1550434005853",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/PBI_CV_8EDDC07B_TBATS.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-c56e5f28-96fd-4531-8fc6-b28c124f936d.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_8EDDC07B_TBATS",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/PBI_CV_967A08ED_59CD_405F_B41A_8CE2050AD30E.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-539f2f0a-ef9b-4a4e-ade9-a16e78bc6fcdHtgp0SIgxNEurtCdMnaFiuz7wk1SuJxfk8KaaAzjZYI=.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_967A08ED_59CD_405F_B41A_8CE2050AD30E",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/PBI_CV_AD348DC9_41C4_4867_B19O_53F9RDC6IEAS_HTML.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-bfe4b139-d0c2-4d91-9d9b-375895f43b28s9ShkEltTKKbiLPAjKTOLZmfv4tgijgZSgjnI4m80DA=.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_AD348DC9_41C4_4867_B19O_53F9RDC6IEAS_HTML",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-dad51717-26c7-4713-b974-f7e53940a6acGz16Xr9SycqQs1FeF8.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/PulseChart1459209850231.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-f9523788-e68a-4581-8ba0-cfa7b117c33dFSppp8nkbRw9uoFkO7lYtfMXAqzD3pQ5FUL-y8kyMpY=.json",
+            "type": 5
+          }
+        ],
+        "name": "PulseChart1459209850231",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/RadarChart1446119667547.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-5725fb7f-1fed-44d2-83c2-713185bd8c75-ZRdEr1E8aOxNXGlj4FLv5nt3Wxbe2yLUo42C.json",
+            "type": 5
+          }
+        ],
+        "name": "RadarChart1446119667547",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/sankey02300D1BE6F5427989F3DE31CCA9E0F32020.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-3f081fcb-a59f-4476-a26d-c2dcfdc23572ex82RAohCMxyo2l2b.json",
+            "type": 5
+          }
+        ],
+        "name": "sankey02300D1BE6F5427989F3DE31CCA9E0F32020",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/stackedBarChartByAkvelonA90827240A9942A3B5F760DFAFF0EF08.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-5dc5d8da-9c98-4d52-bb84-48b8d71580c42gX-ew3iaNe9tisDNJDX37g0F5.vzrhFIWU.json",
+            "type": 5
+          }
+        ],
+        "name": "stackedBarChartByAkvelonA90827240A9942A3B5F760DFAFF0EF08",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/TableHeatMap1443716069308.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-d765dfe7-9c25-44e1-997e-26ba75d381a2MROG9.1Obltl7SqQNgN9x4m.json",
+            "type": 5
+          }
+        ],
+        "name": "TableHeatMap1443716069308",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/Timeline1447991079100.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-4017a46f-ab6d-4ca7-ba0a-aa853c47e4bc2DCKy6a6Ap-WLD5.pwiJkScE8aVLNTN2mEU9w9.json",
+            "type": 5
+          }
+        ],
+        "name": "Timeline1447991079100",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "resources/treeviz2DC46116C4554E20B59DD525EA4DC972.pbiviz.json",
+            "path": "1/b6334d01-13b9-4531-a3a6-532e479d9a1a/ResourcePackage/BlobIdV2-5339c460-a610-4db3-8ab9-57ca590e29e873Ale-fR9VZpLNWmiynp3zhA3NmD0NGsLuiBcHEU.json",
+            "type": 5
+          }
+        ],
+        "name": "treeviz2DC46116C4554E20B59DD525EA4DC972",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "timelineByQueryon2DD9A171C1CB4B148AA3DD23CEF5B2F9.pbiviz.json",
+            "path": "timelineByQueryon2DD9A171C1CB4B148AA3DD23CEF5B2F9.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "timelineByQueryon2DD9A171C1CB4B148AA3DD23CEF5B2F9",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "treemapbarchart333E076637E345EDB9829C52846D5A31.pbiviz.json",
+            "path": "treemapbarchart333E076637E345EDB9829C52846D5A31.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "treemapbarchart333E076637E345EDB9829C52846D5A31",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "TrondelagITall5736853392852754.json",
+            "path": "TrondelagITall5736853392852754.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "mal side",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 893.00,
+      "name": "ReportSection208ff65bb77b0f2308ba",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1588.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Side 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionbf67d8a6aa4c2d7297a1",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3f38a5a13712e2c82679\",\"layouts\":[{\"id\":0,\"position\":{\"x\":42.146341463414636,\"y\":64.97560975609757,\"z\":0,\"width\":693.6585365853659,\"height\":539.1219512195122,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(07459.Verdi)\"},{\"queryRef\":\"07459.tul\"}],\"Category\":[{\"queryRef\":\"07459.år\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0},\"Name\":\"Sum(07459.Verdi)\",\"NativeReferenceName\":\"Verdi\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"år\"},\"Name\":\"07459.år\",\"NativeReferenceName\":\"år\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"tul\"},\"Name\":\"07459.tul\",\"NativeReferenceName\":\"tul\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"07459.tul\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}}],\"error\":[{\"properties\":{\"enabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"barShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"barMatchSeriesColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'square'\"}}},\"shadeShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}},{\"properties\":{\"errorRange\":{\"kind\":\"ErrorRange\",\"percentage\":{\"lowerBoundDelta\":{\"expr\":{\"Literal\":{\"Value\":\"0.1D\"}}},\"upperBoundDelta\":{\"expr\":{\"Literal\":{\"Value\":\"0.1D\"}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}],\"metadata\":\"Sum(07459.Verdi)\",\"highlightMatching\":1}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}},{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'miter'\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}}},\"selector\":{\"metadata\":\"07459.tul\"}}],\"labels\":[{\"properties\":{\"showSeries\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}},{\"properties\":{\"leaderLines\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"minimumOffset\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"42L\"}}},\"showDynamicLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Under'\"}}},\"maximumOffset\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}},\"backgroundTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"metadata\":\"07459.tul\"}},{\"properties\":{\"dynamicLabelValue\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"07459\"}},\"Property\":\"lab 2\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"07459.tul\",\"highlightMatching\":1}}],\"categoryAxis\":[{\"properties\":{\"start\":{\"expr\":{\"Literal\":{\"Value\":\"2019.7D\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"2023.2D\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 539.12,
+          "width": 693.66,
+          "x": 42.15,
+          "y": 64.98,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a96391f00b100897bc94\",\"layouts\":[{\"id\":0,\"position\":{\"x\":964.7836349331236,\"y\":0,\"z\":1,\"width\":315.2163650668765,\"height\":657.6239181746656}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"07459.Geografi\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Geografi\"},\"Name\":\"07459.Geografi\",\"NativeReferenceName\":\"Geografi\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Geografi\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Geografi\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Skaun'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 657.62,
+          "width": 315.22,
+          "x": 964.78,
+          "y": 0.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Side 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 893.00,
+      "name": "ReportSectionc2a63265b63a9548b7b0",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0acd88f00b003b654652\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":637.0792682926829,\"height\":760.1390243902439}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"07459.Geografi\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(07459.Verdi)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Geografi\"},\"Name\":\"07459.Geografi\",\"NativeReferenceName\":\"Geografi\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0},\"Name\":\"Sum(07459.Verdi)\",\"NativeReferenceName\":\"Verdi\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0}}}]},\"queryOptions\":{\"keepProjectionOrder\":true},\"showAllRoles\":[\"Category\"],\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 760.14,
+          "width": 637.08,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"122bb8f0664b9aaac041\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1417.715710723192,\"y\":0,\"z\":1000,\"width\":170.28428927680798,\"height\":147.84372402327514}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"07459 (2).år\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"år\"},\"Name\":\"07459 (2).år\",\"NativeReferenceName\":\"år\"}]},\"syncGroup\":{\"groupName\":\"år\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"år\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2020L\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 147.84,
+          "width": 170.28,
+          "x": 1417.72,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"4d2d5e413c0001c3d250\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760.8906372934697,\"y\":103.70102281667978,\"z\":2000,\"width\":643.4461054287962,\"height\":688.4248623131392}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(07459.Verdi)\"},{\"queryRef\":\"Min(07459.Geografi)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0},\"Name\":\"Sum(07459.Verdi)\",\"NativeReferenceName\":\"Verdi\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Geografi\"},\"Name\":\"Min(07459.Geografi)\",\"NativeReferenceName\":\"Geografi\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0}}}]},\"queryOptions\":{\"keepProjectionOrder\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"card\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 688.42,
+          "width": 643.45,
+          "x": 760.89,
+          "y": 103.70,
+          "z": 2000.00
+        }
+      ],
+      "width": 1588.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Side 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionc7eb8811ba79e34a6b05",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1c9abf1e08ea027048e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.696969696969697,\"y\":0,\"z\":0,\"width\":513.939393939394,\"height\":509.53168044077137,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(07459.Verdi)\"},{\"queryRef\":\"Sum(07459.år)\"},{\"queryRef\":\"Sum(07459.fylkenummer)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"0\",\"Entity\":\"07459\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0},\"Name\":\"Sum(07459.Verdi)\",\"NativeReferenceName\":\"Verdi\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"år\"}},\"Function\":0},\"Name\":\"Sum(07459.år)\",\"NativeReferenceName\":\"år\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"fylkenummer\"}},\"Function\":0},\"Name\":\"Sum(07459.fylkenummer)\",\"NativeReferenceName\":\"fylkenummer\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"0\"}},\"Property\":\"Verdi\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"shapeCustomRectangle\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"tabCutCornerSnipSizeCustomStyle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"rectangleRoundedCurveCustomStyle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"rectangleRoundedCurveLeftTop\":{\"expr\":{\"Literal\":{\"Value\":\"24L\"}}},\"rectangleRoundedCurveRightTop\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"textWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"showBlankAs\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}},\"selector\":{\"metadata\":\"Sum(07459.år)\"}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(07459.fylkenummer)\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}}],\"layout\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'top'\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}}}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"glowCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(07459.Verdi)\"}}],\"image\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"accentBar\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 509.53,
+          "width": 513.94,
+          "x": 9.70,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "TrondelagITall5736853392852754.json"
+}
