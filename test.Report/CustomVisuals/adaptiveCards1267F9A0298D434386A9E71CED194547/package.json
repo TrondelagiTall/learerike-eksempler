@@ -1,0 +1,29 @@
+{
+  "version": "1.0.4",
+  "author": {
+    "name": "Dmitry Vann",
+    "email": "dmitry@mikeallen.com.au"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/adaptiveCards1267F9A0298D434386A9E71CED194547.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "adaptiveCards1267F9A0298D434386A9E71CED194547",
+    "name": "AdaptiveCards 1.0.4",
+    "displayName": "AdaptiveCards 1.0.4",
+    "version": "1.0.4",
+    "description": "AdaptiveCards",
+    "supportUrl": "https://paradigmbi.com.au/Contact",
+    "gitHubUrl": "https://github.com/ParadigmBI/AdaptiveCards",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
